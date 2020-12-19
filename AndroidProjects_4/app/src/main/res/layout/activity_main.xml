@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            app:srcCompat="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/txtId"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/ivLogo"
+            android:layout_centerHorizontal="true"
+            android:hint="ID"
+            android:inputType="textPersonName"
+            android:textColor="#B3ffffff"
+            android:textColorHint="#B3ffffff" />
+
+        <EditText
+            android:id="@+id/txtPw"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txtId"
+            android:hint="Password"
+            android:textColor="#B3ffffff"
+            android:textColorHint="#B3ffffff"
+            android:inputType="textPassword" />
+
+
+        <CheckBox
+            android:id="@+id/cbLogin"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPw"
+            android:textColor="#B3ffffff"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="16dp"
+            android:text="자동로그인" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/cbLogin"
+            android:layout_centerHorizontal="true"
+            android:background="#ffdde1"
+            android:text="Login" />
+
+        <TextView
+            android:id="@+id/tvJoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:textColor="#B3ffffff"
+            android:text="아직 회원이 아니신가요?" />
+
+        <Button
+            android:id="@+id/btnJoin"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tvJoin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="#ffdde1"
+            android:text="Join" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

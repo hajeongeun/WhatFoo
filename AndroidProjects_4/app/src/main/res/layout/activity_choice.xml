@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tvIntro"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:textColor="#B3ffffff"
+            android:text="뭘 먹을지 고민 될 땐 왓푸" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivFood1"
+                android:layout_width="328dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/ivFood2"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="-8dp"
+                android:layout_marginBottom="-2dp"
+                app:srcCompat="@drawable/homemeal" />
+
+            <ImageView
+                android:id="@+id/ivFood2"
+                android:layout_width="306dp"
+                android:layout_height="205dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                app:srcCompat="@drawable/jeyukricebowl" />
+
+            <TextView
+                android:id="@+id/tvRandom"
+                android:layout_toLeftOf="@id/ivFood1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="랜덤으로" />
+
+            <Button
+                android:id="@+id/btnRandom"
+                android:layout_below="@id/tvRandom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffdde1"
+                android:text="추천받기" />
+
+            <TextView
+                android:id="@+id/tvQna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ivFood2"
+                android:layout_below="@id/ivFood1"
+                android:text="질문을 받고
+                                답변을 골라" />
+
+            <Button
+                android:id="@+id/btnQna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvQna"
+                android:layout_toRightOf="@id/ivFood2"
+                android:background="#ffdde1"
+                android:text="추천받기" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
